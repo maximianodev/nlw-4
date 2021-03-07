@@ -77,3 +77,33 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
+
+.active footer button {
+    height: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border: 0;
+    border-radius: 5px;
+
+    color: var(--white);
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    transition: filter 0.2s;
+}
+
+.active footer button.failedButton {
+    background: var(--red);
+}
+
+.active footer button.succeededButon {
+    background: var(--green);
+}
+
+.active footer button:hover {
+    filter: brightness(0.9);
+}
